@@ -1,0 +1,453 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 120px;
+}
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+}
+
+span {
+  color: #F90716;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* min-height: 8vh; */
+  background-color: rgba(0, 0, 0, .2);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+img {
+  width: 100px;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.nav-links a:hover {
+  color: #F55353;
+}
+
+.banner-area {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.content {
+  color: white;
+  text-align: center;
+  height: 100%;
+  align-items: center;
+  padding: 20%;
+  line-height: 1;
+}
+
+/* Container One */
+.vans-img {
+  width: 50%;
+  margin-right: 50px;
+  float: left;
+}
+
+.contentOne {
+  margin: 100px;
+  font-size: 65px;
+}
+
+/* Latest Section */
+.hr-title {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.hr-news {
+  font-size: 18px;
+  margin-left: 20px;
+  padding: 20px 0;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.container-one-header {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  padding: 50px;
+}
+
+.collab-img {
+  width: 380px;
+}
+
+.row {
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  margin: 20px;
+}
+
+.vans-title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.vans-info {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+
+/* View more Button */
+button {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 18px;
+  background-color: #000000;
+  border: none;
+  padding: 15px 120px;
+  letter-spacing: 2px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #D61C4E;
+}
+
+.viewmore-button {
+  text-align: center;
+  margin: 20px;
+}
+
+/* SHOP BY */
+.shop {
+  padding: 50px;
+}
+
+.container-three-header {
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+
+/* --------------------------------------- */
+.rowTwo {
+  width: fit-content;
+  display: table;
+  padding-bottom: 40px;
+}
+
+.container {
+  position: relative;
+  margin: 17px;
+  float: left;
+}
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Bebas Neue', cursive;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  width: fit-content;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.text h2 {
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.text p {
+  color: #D1D1D1;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.texttwo {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: black;
+  transition-duration: 0.3s;
+  padding: 7px 60px;
+  letter-spacing: 5px;
+}
+
+.texttwo:hover {
+  background-color: #D61C4E;
+  border: none;
+}
+
+/* SHOP BY Version 2 */
+.container-four {
+  padding-bottom: 20px;
+}
+
+.rowThree {
+  padding: 5px 10px;
+  display: flex;
+}
+
+.shopby {
+  padding: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.bgimg {
+  width: 100%;
+  height: 99%;
+}
+
+.bgtext {
+  font-family: 'Libre Franklin', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.shoptitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shoptitle h4 {
+  font-size: 35px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.shop_link {
+  padding: 5px 15px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #85bee3;
+  line-height: 2;
+}
+
+.shop_link:hover {
+  color: white;
+  background-color: #D61C4E;
+}
+
+/* 00000000000000000000000000000000000000 */
+#vansCarousel {
+  padding: 10px;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.carouselImage {
+  width: 95%;
+  margin: 0 5px 0 5px;
+}
+
+/* FOOTER */
+.footer {
+  padding-bottom: 50px;
+  background-color: #191919;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+}
+
+.footer-links {
+  padding: 20px;
+  list-style: none;
+  text-align: left;
+}
+
+.footer-links h3 {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.footer-title {
+  padding: 10px 80px 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+a:hover {
+  color: #F55353;
+}
+
+li {
+  padding: 10px 0 10px;
+}
+
+/* 0000000000000000000000000000000000 */
+
+.contact-footerOne {
+  padding: 20px;
+  background-color: #191919;
+  color: white;
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 60%;
+  height: 40px;
+}
+
+.sample {
+}
+
+.sample h2 {
+  padding: 10px 0 10px 0;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+}
+
+.sample p {
+  padding: 8px 0 15px 0;
+  font-size: 13px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.send-btn {
+  border: none;
+  background-color: #D61C4E;
+  font-size: 17px;
+  padding: 9px 32px;
+}
+
+.find {
+  background-color: #D61C4E;
+  font-size: 18px;
+  border: none;
+  padding: 15px 60px;
+  letter-spacing: 2px;
+}
+
+.follow-acct {
+  padding-left: 25.7%;
+}
+
+.follow-acct h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  padding: 50px 0 50px 0;
+}
+
+.footer-link {
+  padding-right: 10px;
+}
+
+.social-twitter:hover {
+  background-color: white;
+  color: #007aff;
+}
+
+.social-facebook:hover {
+  background-color: white;
+  color: #3b5998;
+}
+
+.social-pinterest:hover {
+  background-color: white;
+  color: #bd091c;
+}
+.social-youtube:hover {
+  background-color: white;
+  color: #e7221a;
+}
+.social-instagram:hover {
+  background-color: white;
+  color: #833AB4;
+}
